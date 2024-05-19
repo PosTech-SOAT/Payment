@@ -30,6 +30,7 @@ jobs:
         run: |
           docker tag payment-fiap:latest santanarael/payment-fiap:latest
           docker push santanarael/payment-fiap:latest
+          sudo update-binfmts --enable qemu-aarch64
 
       - name: Install kubectl
         run: |
