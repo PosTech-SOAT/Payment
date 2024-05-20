@@ -18,7 +18,7 @@ Este repositório contém o código-fonte e os recursos necessários para o micr
 
 A pipeline está configurada para facilitar a integração contínua e a entrega contínua (CI/CD) do microsserviço de Pagamento:
 
-1. **Testes Unitários:** Os testes unitários definidos em `tests/` são executados automaticamente na pipeline.
+1. **Testes Unitários:** Os testes unitários são executados automaticamente na pipeline.
 2. **Construção da Imagem Docker:** Após a aprovação dos testes, a imagem Docker é construída a partir do Dockerfile fornecido.
 3. **Deploy no Kubernetes:** Os manifestos Kubernetes em `k8s/` são aplicados no cluster Kubernetes utilizando `kubectl apply`.
 
