@@ -55,3 +55,4 @@ jobs:
           kubectl apply -f k8s/payment-deployment.yaml
           sleep 10s
           kubectl apply -f k8s/payment-hpa.yaml
+          echo "http://$(kubectl get svc payment-service -o=jsonpath='{.status.loadBalancer.ingress[0].hostname}'):34343/api/payment"
