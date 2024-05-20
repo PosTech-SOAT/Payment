@@ -30,3 +30,4 @@ Antes de executar a pipeline, certifique-se de configurar as seguintes variávei
 
 
 Certifique-se de que essas variáveis de ambiente estejam configuradas corretamente para garantir o funcionamento adequado da pipeline.
+
