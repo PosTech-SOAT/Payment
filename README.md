@@ -1,5 +1,10 @@
 # Microsserviço de Pagamento (payment)
 
+[![Quality gate](https://sonarcloud.io/api/project_badges/quality_gate?project=PosTech-SOAT_Payment)](https://sonarcloud.io/summary/new_code?id=PosTech-SOAT_Payment)
+
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=PosTech-SOAT_Payment&metric=coverage)](https://sonarcloud.io/summary/new_code?id=PosTech-SOAT_Payment)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=PosTech-SOAT_Payment&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=PosTech-SOAT_Payment)
+
 ## Visão Geral
 
 Este repositório contém o código-fonte e os recursos necessários para o microsserviço de Pagamento do projeto de um Sistema de Controle de Pedidos, desenvolvido durante a Pós-graduação em Arquitetura de Software da FIAP. Este microsserviço faz parte de uma aplicação maior construída em Node.js com TypeScript, Docker e Kubernetes.
