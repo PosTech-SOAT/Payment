@@ -9,5 +9,8 @@ const paymentController = new PaymentController(new PaymentRepository());
 paymentRoute.post('/', (req, res) =>
 	paymentController.create(req, res, paymentController),
 );
+paymentRoute.get('/callback', (req, res) =>
+	paymentController.paymentWebhook(req, res),
+);
 
 export default paymentRoute;

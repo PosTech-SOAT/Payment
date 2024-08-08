@@ -32,15 +32,18 @@ export class PaymentRepository implements IPaymentRepository {
 							email: 'liguo1122@uorak.com',
 						},
 						back_urls: {
-							success: 'http://localhost:3000/api/orders/callback',
-							failure: 'http://localhost:3000/api/orders/callback',
-							pending: 'http://localhost:3000/api/orders/callback',
+							success:
+								'http://postech_payment_container:3002/api/payment/callback',
+							failure:
+								'http://postech_payment_container:3002/api/payment/callback',
+							pending:
+								'http://postech_payment_container:3002/api/payment/callback',
 						},
 						payment_methods: {
 							installments: 1,
 						},
 						auto_return: 'all',
-						external_reference: order.products[0].id,
+						external_reference: order.id,
 					},
 				});
 				return paymentDetails.sandbox_init_point;
