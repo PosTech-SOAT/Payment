@@ -22,6 +22,14 @@ spec:
               value: TEST-580c0533-1d6b-4cd6-a936-42b0051102df
             - name: ML_ACCESS_TOKEN
               value: TEST-7456580585039188-012819-455f57e3f99cb1ca44c09a1ac2373791-304069289
+            - name: AMQP_USER
+              value: guest
+            - name: AMQP_PASS
+              value: guest
+            - name: AMQP_HOST
+              value: http://a828ed4fc239c47ae9e5d106ff020fac-1949601428.us-east-1.elb.amazonaws.com
+            - name: AMQP_PORT
+              value: '5672'
           resources:
             requests:
               memory: '128Mi' # Memória inicial / MI = milicores (1 core = 1000 milicores)
